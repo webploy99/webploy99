@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Testing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body class="bg-gray-900">
+    <div class="header bg-sky-500 fixed top-0 w-full">
+        <div class="max-w-7xl m-auto flex justify-between p-3 text-gray-100 font-semibold tracking-wide">
+
+            <div class="">
+                <span class="text-2xl font-bold">LOGO</span>
+            </div>
+
+            <div id="menu" class="menuu fixed top-0 left-0 w-0 h-full bg-sky-500 duration-500 z-10 overflow-x-hidden   md:static md:w-auto md:h-auto md:bg-transparent md:overflow-x-hidden">
+                <button class="absolute top-2 right-5 text-red-500 md:hidden text-2xl" onclick="closeNav()"><ion-icon name="close"></ion-icon></button>
+                <ul class="flex flex-col gap-8 mt-10 p-10 md:flex-row md:mt-0 md:p-0">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </ul>
+            </div>
+
+            <div class="hidden md:block text-sm *:px-5 *:py-1.5 *:bg-yellow-500 *:rounded-lg *:border" >
+                <button class="hover:bg-yellow-600 duration-500">LOGIN</button>
+                <button class="hover:bg-yellow-600 duration-500">SIGNIN</button>
+            </div>
+              
+            <button class="openbtn md:hidden text-2xl" onclick="openNav()"><ion-icon name="menu"></ion-icon></button> 
+              
+        </div>
+
+    </div>
+
+    <div class="main mt-20">
+        <div class="max-w-7xl m-auto text-gray-100">
+            <div class="grid md:grid-cols-12 gap-5 p-5">
+                <div class="left col-span-8">
+                    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3 text-3xl font-bold">
+                        <div class="w-full h-40 border flex justify-center items-center">1</div>
+                        <div class="w-full h-40 border flex justify-center items-center">2</div>
+                        <div class="w-full h-40 border flex justify-center items-center">3</div>
+                        <div class="w-full h-40 border flex justify-center items-center">4</div>
+                        <div class="w-full h-40 border flex justify-center items-center">5</div>
+                        <div class="w-full h-40 border flex justify-center items-center">6</div>
+                        <div class="w-full h-40 border flex justify-center items-center">7</div>
+                        <div class="w-full h-40 border flex justify-center items-center">8</div>
+                        <div class="w-full h-40 border flex justify-center items-center">9</div>
+                    </div>
+                </div>
+                <div class="right col-span-4">
+                    <div class="p-2 flex flex-col gap-3">
+                        <div class="grid grid-cols-12 gap-3">
+                            <div class="col-span-4 border rounded-lg w-full h-28 p-1.5 flex justify-center items-center">Picture</div>
+                            <div class="col-span-8 border p-1.5 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident mollitia fuga dolorem repellendus fugit officiis?</div>
+                        </div>
+                        <div class="grid grid-cols-12 gap-3">
+                            <div class="col-span-4 border rounded-lg w-full h-28 p-1.5 flex justify-center items-center">Picture</div>
+                            <div class="col-span-8 border p-1.5 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident mollitia fuga dolorem repellendus fugit officiis?</div>
+                        </div>
+                        <div class="grid grid-cols-12 gap-3">
+                            <div class="col-span-4 border rounded-lg w-full h-28 p-1.5 flex justify-center items-center">Picture</div>
+                            <div class="col-span-8 border p-1.5 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident mollitia fuga dolorem repellendus fugit officiis?</div>
+                        </div>
+                        <div class="grid grid-cols-12 gap-3">
+                            <div class="col-span-4 border rounded-lg w-full h-28 p-1.5 flex justify-center items-center">Picture</div>
+                            <div class="col-span-8 border p-1.5 text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident mollitia fuga dolorem repellendus fugit officiis?</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("menu").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("menu").style.width = "0";
+        }
+    </script>
+</body>
+</html>
